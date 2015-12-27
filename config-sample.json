@@ -1,0 +1,26 @@
+{
+    "bridge": {
+        "name": "Homebridge",
+        "username": "CC:22:3D:E3:CE:30",
+        "port": 51826,
+        "pin": "031-45-154"
+    },
+    "description": "This is an example configuration file to help you get set up with homebridge-rcswitch-gpiomem.",
+    "accessories": [
+        {
+            "accessory": "RCSwitch",
+            "name": "Switch number one",
+            "onCode": 1234567, 
+            "offCode": 2345678,
+            "pin": 17,
+            "pulseLength": 190,
+            "bitLength": 24
+        },
+        {
+            "accessory": "RCSwitch",
+            "name": "Switch number two",
+            "onCode": "010001011001100010100110", 
+            "offCode": "001101000010100010111101"
+        }
+    ]
+}

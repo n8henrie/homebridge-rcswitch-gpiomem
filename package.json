@@ -1,24 +1,35 @@
 {
-  "name": "homebridge-rcswitch",
-  "version": "1.0.0",
+  "name": "homebridge-rcswitch-gpiomem",
+  "version": "1.1.0",
+  "description": "Siri / HomeKit control of RF switches by way of homebridge. Fork of https://github.com/FWeinb/homebridge-rcswitch",
+  "repository": {
+      "type": "git",
+      "url": "https://github.com/n8henrie/homebridge-rcswitch-gpiomem.git"
+  },
   "license": "MIT",
   "keywords": [
     "rcswitch",
     "raspberry",
+    "raspberrypi",
+    "rpi",
     "433",
-    "mhz",
     "gpio",
+    "gpiomem",
     "wiringPi",
-    "pi",
     "siri",
     "homebridge",
     "homebridge-plugin"
   ],
+  "author": "Nathan Henrie <http://n8henrie.com>",
   "engines": {
     "node": ">=0.12.0",
     "homebridge": ">=0.2.0"
   },
+  "bugs": {
+      "url": "https://github.com/n8henrie/homebridge-rcswitch-gpiomem/issues"
+  },
+  "homepage": "http://n8henrie.com/2015/12/control-an-rf-outlet-with-siri-via-homebridge",
   "dependencies": {
-    "rcswitch": "^0.2.3"
+      "rcswitch-gpiomem": ">= 0.3.0"
   }
 }
