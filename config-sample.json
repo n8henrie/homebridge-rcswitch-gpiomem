@@ -14,7 +14,8 @@
             "offCode": 2345678,
             "pin": 17,
             "pulseLength": 190,
-            "bitLength": 24
+            "bitLength": 24,
+            "repeats": 10
         },
         {
             "accessory": "RCSwitch",

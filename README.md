@@ -37,3 +37,6 @@ really help with.
 - `pulseLength` :: int, optional :: RF pulse length, defaults to `190`
 - `bitLength` :: int, optional :: bit length of RF code, only used if using
   decimal RF code, defaults to `24`
+- `repeats` :: int, optional :: Number of times to repeat the transmission of
+  the code, defaults to 10 (as per [the original rcswitch
+  code](https://github.com/sui77/rc-switch/blob/a7333b87d7e3ef8d9ce2eb6ca44843a8d19e7393/RCSwitch.cpp#L103))

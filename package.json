@@ -1,6 +1,6 @@
 {
   "name": "homebridge-rcswitch-gpiomem",
-  "version": "1.1.0",
+  "version": "1.1.1",
   "description": "Siri / HomeKit control of RF switches by way of homebridge. Fork of https://github.com/FWeinb/homebridge-rcswitch",
   "repository": {
       "type": "git",
@@ -30,6 +30,6 @@
   },
   "homepage": "http://n8henrie.com/2015/12/control-an-rf-outlet-with-siri-via-homebridge",
   "dependencies": {
-      "rcswitch-gpiomem": ">= 0.3.0"
+      "rcswitch-gpiomem": ">= 0.3.1"
   }
 }
