@@ -39,7 +39,6 @@ function RadioSwitch(log, config) {
     }
 
     rcswitch.enableTransmit(config.pin || 17);
-    rcswitch.setRepeatTransmit(config.repeats || 10);
 
     var informationService = new Service.AccessoryInformation();
 
@@ -57,6 +56,7 @@ function RadioSwitch(log, config) {
         .on('set', function(value, callback) {
             state = value;
             rcswitch.setPulseLength(config.pulseLength || 190);
+            rcswitch.setRepeatTransmit(config.repeats || 10);
             if (state) {
                 switchOn();
             } else {
