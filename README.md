@@ -43,6 +43,11 @@ really help with.
 
 # Changelog
 
+## 20160727 :: 1.1.3
+
+- Move `setRepeatTransmit` to just before calling `switchOn()` to facilitate
+  multiple switches with different desired repeat counts
+
 ## 20160727 :: 1.1.2
 
 - Move `setPulseLength` from initialization to just before calling `switchOn()`
