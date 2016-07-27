@@ -40,3 +40,10 @@ really help with.
 - `repeats` :: int, optional :: Number of times to repeat the transmission of
   the code, defaults to 10 (as per [the original rcswitch
   code](https://github.com/sui77/rc-switch/blob/a7333b87d7e3ef8d9ce2eb6ca44843a8d19e7393/RCSwitch.cpp#L103))
+
+# Changelog
+
+## 20160727 :: 1.1.2
+
+- Move `setPulseLength` from initialization to just before calling `switchOn()`
+  to facilitate multiple switches with different pulse lengths (closes #2).
