@@ -31,5 +31,8 @@
   "homepage": "http://n8henrie.com/2015/12/control-an-rf-outlet-with-siri-via-homebridge",
   "dependencies": {
       "rcswitch-gpiomem": "0.3.2"
+  },
+  "scripts": {
+      "preinstall": "git clone git://git.drogon.net/wiringPi && cd wiringPi && ./build"
   }
 }
