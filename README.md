@@ -41,6 +41,10 @@ really help with.
   the code, defaults to 10 (as per [the original rcswitch
   code](https://github.com/sui77/rc-switch/blob/a7333b87d7e3ef8d9ce2eb6ca44843a8d19e7393/RCSwitch.cpp#L103))
 
+# FAQ / Troubleshooting
+
+It seems that the `gpiomem` system I use and the SysFS method of interacting with the GPIO are not compatible for reasons [explained in this issue](https://github.com/n8henrie/homebridge-rcswitch-gpiomem/issues/11). Make sure that you aren't also using programs that access the GPIO by way of SysFS or this library may not work.
+
 # Changelog
 
 ## 20160727 :: 1.1.3
