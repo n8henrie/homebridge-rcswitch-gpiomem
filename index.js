@@ -38,8 +38,6 @@ function RadioSwitch(log, config) {
                 "doesn't appear to include at least one of these pairs.");
     }
 
-    rcswitch.enableTransmit(config.pin || 17);
-
     var informationService = new Service.AccessoryInformation();
 
     informationService
@@ -55,6 +53,7 @@ function RadioSwitch(log, config) {
         .getCharacteristic(Characteristic.On)
         .on('set', function(value, callback) {
             state = value;
+    		rcswitch.enableTransmit(config.pin || 17);
             rcswitch.setPulseLength(config.pulseLength || 190);
             rcswitch.setRepeatTransmit(config.repeats || 10);
             if (state) {
