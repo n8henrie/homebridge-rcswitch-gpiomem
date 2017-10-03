@@ -47,6 +47,11 @@ It seems that the `gpiomem` system I use and the SysFS method of interacting wit
 
 # Changelog
 
+## 20171003 :: 1.1.5
+
+- Moved enableTransmit into loop to allow different accessories to use
+  different pins (@foodbag)
+
 ## 20160727 :: 1.1.3
 
 - Move `setRepeatTransmit` to just before calling `switchOn()` to facilitate
